@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
+import Head from "next/head";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -23,15 +24,32 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en">
-      <body
-        className="antialiased"
-        style={{
-          fontFamily: `${geistSans.variable}, ${geistMono.variable}`,
-        }}
-      >
-        {children}
-      </body>
-    </html>
+    <>
+      <Head>
+        <title>Arshad Ali - Web Developer Portfolio</title>
+        <meta
+          name="description"
+          content="Portfolio of Arshad Ali, a passionate web developer specializing in modern, responsive, and accessible web applications."
+        />
+        <meta property="og:title" content="Arshad Ali - Web Developer Portfolio" />
+        <meta
+          property="og:description"
+          content="Portfolio of Arshad Ali, showcasing projects, skills, and roadmaps for web development."
+        />
+        <meta property="og:image" content="/public/nodejs-logo.png" />
+        <meta property="og:url" content="https://portfolio-ashen-pi.vercel.app" />
+        <meta name="twitter:card" content="summary_large_image" />
+      </Head>
+      <html lang="en">
+        <body
+          className="antialiased"
+          style={{
+            fontFamily: `${geistSans.variable}, ${geistMono.variable}`,
+          }}
+        >
+          {children}
+        </body>
+      </html>
+    </>
   );
 }
