@@ -1,100 +1,202 @@
 import Image from "next/image";
+import Link from "next/link";
+import Navbar from "./Navbar";
 
 export default function Home() {
   return (
-    <div className="grid grid-rows-[20px_1fr_20px] items-center justify-items-center min-h-screen p-8 pb-20 gap-16 sm:p-20 font-[family-name:var(--font-geist-sans)]">
-      <main className="flex flex-col gap-8 row-start-2 items-center sm:items-start">
-        <Image
-          className="dark:invert"
-          src="/next.svg"
-          alt="Next.js logo"
-          width={180}
-          height={38}
-          priority
-        />
-        <ol className="list-inside list-decimal text-sm text-center sm:text-left font-[family-name:var(--font-geist-mono)]">
-          <li className="mb-2">
-            Get started by editing{" "}
-            <code className="bg-black/[.05] dark:bg-white/[.06] px-1 py-0.5 rounded font-semibold">
-              src/app/page.tsx
-            </code>
-            .
-          </li>
-          <li>Save and see your changes instantly.</li>
-        </ol>
+    <div className="min-h-screen flex flex-col items-center bg-gradient-to-b from-white to-gray-100 dark:from-black dark:to-gray-900 p-4 sm:p-8">
+      {/* Navbar */}
+      <Navbar />
+      <div className="h-20" />
 
-        <div className="flex gap-4 items-center flex-col sm:flex-row">
-          <a
-            className="rounded-full border border-solid border-transparent transition-colors flex items-center justify-center bg-foreground text-background gap-2 hover:bg-[#383838] dark:hover:bg-[#ccc] text-sm sm:text-base h-10 sm:h-12 px-4 sm:px-5"
-            href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
+      {/* Hero Section */}
+      <section className="w-full max-w-3xl text-center mt-16 mb-20">
+        <h1 className="text-4xl sm:text-5xl font-bold mb-4">
+          Hi, I&apos;m Arshad Ali
+        </h1>
+        <p className="text-lg sm:text-xl text-gray-600 dark:text-gray-300 mb-6">
+          I&apos;m a passionate web developer specializing in building modern,
+          responsive, and accessible web applications.
+        </p>
+        <div className="flex flex-col sm:flex-row gap-4 justify-center items-center mb-4">
+          <Link
+            href="https://github.com/Arshadakali"
             target="_blank"
             rel="noopener noreferrer"
+            className="inline-block bg-gray-900 text-white px-6 py-2 rounded-full font-semibold hover:bg-gray-700 transition"
           >
-            <Image
-              className="dark:invert"
-              src="/vercel.svg"
-              alt="Vercel logomark"
-              width={20}
-              height={20}
-            />
-            Deploy now
-          </a>
-          <a
-            className="rounded-full border border-solid border-black/[.08] dark:border-white/[.145] transition-colors flex items-center justify-center hover:bg-[#f2f2f2] dark:hover:bg-[#1a1a1a] hover:border-transparent text-sm sm:text-base h-10 sm:h-12 px-4 sm:px-5 sm:min-w-44"
-            href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
+            GitHub
+          </Link>
+          <Link
+            href="https://www.linkedin.com/in/arshad-ali-38991b279/"
             target="_blank"
             rel="noopener noreferrer"
+            className="inline-block bg-blue-700 text-white px-6 py-2 rounded-full font-semibold hover:bg-blue-800 transition"
           >
-            Read our docs
-          </a>
+            LinkedIn
+          </Link>
         </div>
-      </main>
-      <footer className="row-start-3 flex gap-6 flex-wrap items-center justify-center">
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
+        <Link
+          href="/#contact"
+          className="inline-block bg-blue-600 text-white px-6 py-2 rounded-full font-semibold hover:bg-blue-700 transition"
         >
-          <Image
-            aria-hidden
-            src="/file.svg"
-            alt="File icon"
-            width={16}
-            height={16}
+          Contact Me
+        </Link>
+      </section>
+
+      {/* About Section */}
+      <section className="w-full max-w-2xl mb-20" id="about">
+        <h2 className="text-2xl font-bold mb-4">About Me</h2>
+        <p className="text-gray-700 dark:text-gray-300">
+          [Brief introduction about yourself, your background, and your skills.]
+        </p>
+      </section>
+
+      {/* Projects Section */}
+      <section className="w-full max-w-4xl mb-20" id="projects">
+        <h2 className="text-2xl font-bold mb-8 text-center">Projects</h2>
+        <div className="grid gap-8 sm:grid-cols-2">
+          {/* Example Project Card */}
+          <div className="bg-white dark:bg-gray-800 rounded-lg shadow p-6 flex flex-col">
+            <h3 className="text-xl font-semibold mb-2">Project Title</h3>
+            <p className="text-gray-600 dark:text-gray-300 mb-4">
+              Short project description goes here.
+            </p>
+            <Link href="#" className="text-blue-600 hover:underline mt-auto">
+              View Project
+            </Link>
+          </div>
+          {/* Add more project cards as needed */}
+        </div>
+      </section>
+
+      <section className="w-full max-w-4xl mb-20" id="roadmaps">
+        <h2 className="text-2xl font-bold mb-8 text-center">Roadmaps</h2>
+        <div className="grid gap-8 sm:grid-cols-2">
+          {/* Node.js Roadmap Card */}
+          <div className="bg-white dark:bg-gray-800 rounded-lg shadow p-6 flex flex-col items-center">
+            <Image
+              src="/nodejs-logo.png"
+              alt="Node.js Logo"
+              width={80}
+              height={80}
+              className="w-20 h-20 mb-4"
+              priority
+            />
+            <h3 className="text-xl font-semibold mb-2">Node.js Roadmap</h3>
+            <p className="text-gray-600 dark:text-gray-300 mb-4 text-center">
+              A step-by-step guide to becoming a Node.js developer. Includes
+              learning resources and project ideas.
+            </p>
+            <Link
+              href="/node-roadmap"
+              className="text-blue-600 hover:underline mt-auto font-semibold border border-blue-600 rounded px-4 py-2 transition hover:bg-blue-50 dark:hover:bg-blue-900"
+            >
+              View Roadmap
+            </Link>
+          </div>
+          {/* MERN Roadmap Card */}
+          <div className="bg-white dark:bg-gray-800 rounded-lg shadow p-6 flex flex-col items-center">
+            <Image
+              src="/window.svg"
+              alt="MERN Stack Logo"
+              width={80}
+              height={80}
+              className="w-20 h-20 mb-4"
+              priority
+            />
+            <h3 className="text-xl font-semibold mb-2">MERN Roadmap</h3>
+            <p className="text-gray-600 dark:text-gray-300 mb-4 text-center">
+              A visual guide for becoming a MERN Stack developer. Covers MongoDB, Express, React, and Node.js.
+            </p>
+            <Link
+              href="/fullstack-roadmap"
+              className="text-blue-600 hover:underline mt-auto font-semibold border border-blue-600 rounded px-4 py-2 transition hover:bg-blue-50 dark:hover:bg-blue-900"
+            >
+              View Roadmap
+            </Link>
+          </div>
+          {/* Frontend Roadmap Card */}
+          <div className="bg-white dark:bg-gray-800 rounded-lg shadow p-6 flex flex-col items-center">
+            <Image
+              src="/window.svg"
+              alt="Frontend Logo"
+              width={80}
+              height={80}
+              className="w-20 h-20 mb-4"
+              priority
+            />
+            <h3 className="text-xl font-semibold mb-2">Frontend Roadmap</h3>
+            <p className="text-gray-600 dark:text-gray-300 mb-4 text-center">
+              A step-by-step guide to becoming a modern frontend developer. Includes HTML, CSS, JS, React, and more.
+            </p>
+            <Link
+              href="/frontend-roadmap"
+              className="text-blue-600 hover:underline mt-auto font-semibold border border-blue-600 rounded px-4 py-2 transition hover:bg-blue-50 dark:hover:bg-blue-900"
+            >
+              View Roadmap
+            </Link>
+          </div>
+          {/* Backend Roadmap Card */}
+          <div className="bg-white dark:bg-gray-800 rounded-lg shadow p-6 flex flex-col items-center">
+            <Image
+              src="/window.svg"
+              alt="Backend Logo"
+              width={80}
+              height={80}
+              className="w-20 h-20 mb-4"
+              priority
+            />
+            <h3 className="text-xl font-semibold mb-2">Backend Roadmap</h3>
+            <p className="text-gray-600 dark:text-gray-300 mb-4 text-center">
+              A step-by-step guide to backend development. Covers Node.js, Express, REST APIs, databases, and more.
+            </p>
+            <Link
+              href="/backend-roadmap"
+              className="text-blue-600 hover:underline mt-auto font-semibold border border-blue-600 rounded px-4 py-2 transition hover:bg-blue-50 dark:hover:bg-blue-900"
+            >
+              View Roadmap
+            </Link>
+          </div>
+        </div>
+      </section>
+
+      {/* Contact Section */}
+      <section className="w-full max-w-md mb-20" id="contact">
+        <h2 className="text-2xl font-bold mb-4">Contact</h2>
+        <form className="flex flex-col gap-4">
+          <input
+            type="text"
+            name="name"
+            placeholder="Your Name"
+            className="p-2 rounded border border-gray-300 dark:border-gray-700 bg-white dark:bg-gray-900"
+            required
           />
-          Learn
-        </a>
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/window.svg"
-            alt="Window icon"
-            width={16}
-            height={16}
+          <input
+            type="email"
+            name="email"
+            placeholder="Your Email"
+            className="p-2 rounded border border-gray-300 dark:border-gray-700 bg-white dark:bg-gray-900"
+            required
           />
-          Examples
-        </a>
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://nextjs.org?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/globe.svg"
-            alt="Globe icon"
-            width={16}
-            height={16}
+          <textarea
+            name="message"
+            placeholder="Your Message"
+            className="p-2 rounded border border-gray-300 dark:border-gray-700 bg-white dark:bg-gray-900"
+            rows={4}
+            required
           />
-          Go to nextjs.org →
-        </a>
+          <button
+            type="submit"
+            className="bg-blue-600 text-white px-4 py-2 rounded hover:bg-blue-700 transition"
+          >
+            Send
+          </button>
+        </form>
+      </section>
+
+      <footer className="w-full text-center text-gray-500 dark:text-gray-400 py-8 border-t border-gray-200 dark:border-gray-700 mt-auto">
+        &copy; 2025 Arshad Ali. All rights reserved.
       </footer>
     </div>
   );
