@@ -81,6 +81,43 @@ export default function Home() {
               Visit CalculatorX
             </Link>
           </div>
+          {/* Cybersecurity Project Card */}
+          <div className="bg-white dark:bg-gray-800 rounded-lg shadow p-6 flex flex-col">
+            <div className="flex items-center gap-3 mb-3">
+              <Image
+                src="/globe.svg"
+                alt="Cybersecurity Icon"
+                width={32}
+                height={32}
+                className="w-8 h-8"
+                priority
+              />
+              <span className="text-xs px-2 py-1 rounded-full bg-blue-100 text-blue-700 dark:bg-blue-900 dark:text-blue-200">
+                Security
+              </span>
+            </div>
+            <h3 className="text-xl font-semibold mb-2">
+              <Link
+                href="https://cybersecurity-pi-ten.vercel.app/"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="hover:underline"
+              >
+                Cybersecurity Platform
+              </Link>
+            </h3>
+            <p className="text-gray-600 dark:text-gray-300 mb-4">
+              Comprehensive cybersecurity tools, resources, and a security awareness dashboard.
+            </p>
+            <Link
+              href="https://cybersecurity-pi-ten.vercel.app/"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="text-blue-600 hover:underline mt-auto"
+            >
+              Visit Cybersecurity
+            </Link>
+          </div>
           {/* Add more project cards as needed */}
         </div>
       </section>
