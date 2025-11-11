@@ -97,7 +97,7 @@ export default function FullstackRoadmap() {
             MERN Roadmap
           </h2>
           {/* Row 1: HTML, CSS, JavaScript, npm */}
-          <div className="flex flex-row justify-center gap-8 w-full mb-4 items-end">
+          <div className="flex flex-row flex-wrap justify-center gap-4 sm:gap-6 md:gap-8 w-full mb-4 items-end">
             <div
               className="bg-yellow-300 border-2 border-black rounded-lg px-8 py-3 font-bold text-lg text-black shadow hover:scale-105 transition cursor-pointer"
               tabIndex={0}
@@ -151,7 +151,7 @@ export default function FullstackRoadmap() {
             </div>
           </div>
           {/* Row 2: Checkpoints */}
-          <div className="flex flex-row justify-center gap-8 w-full mb-4">
+          <div className="flex flex-row flex-wrap justify-center gap-4 sm:gap-6 md:gap-8 w-full mb-4">
             <div className="bg-black text-white border-2 border-black rounded-lg px-8 py-3 font-semibold shadow">
               Checkpoint - Static Webpages
             </div>
@@ -163,7 +163,7 @@ export default function FullstackRoadmap() {
             </div>
           </div>
           {/* Row 3: React, Tailwind CSS, GitHub, Git, Redux, Accessibility, Testing */}
-          <div className="flex flex-row justify-center gap-8 w-full mb-4 items-end">
+          <div className="flex flex-row flex-wrap justify-center gap-4 sm:gap-6 md:gap-8 w-full mb-4 items-end">
             <div
               className="bg-yellow-300 border-2 border-black rounded-lg px-8 py-3 font-bold text-lg text-black shadow hover:scale-105 transition cursor-pointer"
               tabIndex={0}
@@ -248,13 +248,13 @@ export default function FullstackRoadmap() {
             </div>
           </div>
           {/* Row 4: Checkpoint - Frontend Apps */}
-          <div className="flex flex-row justify-center gap-8 w-full mb-4">
+          <div className="flex flex-row flex-wrap justify-center gap-4 sm:gap-6 md:gap-8 w-full mb-4">
             <div className="bg-black text-white border-2 border-black rounded-lg px-8 py-3 font-semibold shadow">
               Checkpoint - Frontend Apps
             </div>
           </div>
           {/* Row 5: Node.js, Express, API, Database */}
-          <div className="flex flex-row justify-center gap-8 w-full mb-4">
+          <div className="flex flex-row flex-wrap justify-center gap-4 sm:gap-6 md:gap-8 w-full mb-4">
             <a
               href="/node-roadmap"
               className="bg-yellow-300 border-2 border-black rounded-lg px-8 py-3 font-bold text-lg text-black shadow focus:outline-none focus:ring-4 focus:ring-yellow-400 hover:bg-yellow-200 transition cursor-pointer inline-flex items-center gap-2"
@@ -301,13 +301,13 @@ export default function FullstackRoadmap() {
             </div>
           </div>
           {/* Row 6: Checkpoint - Backend APIs */}
-          <div className="flex flex-row justify-center gap-8 w-full mb-4">
+          <div className="flex flex-row flex-wrap justify-center gap-4 sm:gap-6 md:gap-8 w-full mb-4">
             <div className="bg-black text-white border-2 border-black rounded-lg px-8 py-3 font-semibold shadow">
               Checkpoint - Backend APIs
             </div>
           </div>
           {/* Row 7: Authentication, Deployment, CI/CD */}
-          <div className="flex flex-row justify-center gap-8 w-full mb-4">
+          <div className="flex flex-row flex-wrap justify-center gap-4 sm:gap-6 md:gap-8 w-full mb-4">
             <div
               className="bg-yellow-300 border-2 border-black rounded-lg px-8 py-3 font-bold text-lg text-black shadow hover:scale-105 transition cursor-pointer"
               tabIndex={0}

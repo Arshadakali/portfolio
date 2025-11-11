@@ -23,19 +23,19 @@ export default function FrontendRoadmap() {
         </div>
         <section className="w-full max-w-5xl mt-12 flex flex-col items-center">
           <h2 className="text-2xl font-bold mb-6 text-black dark:text-white">Frontend Roadmap</h2>
-          <div className="flex flex-row justify-center gap-8 w-full mb-4 items-end">
+          <div className="flex flex-row flex-wrap justify-center gap-4 sm:gap-6 md:gap-8 w-full mb-4 items-end">
             <div className="bg-yellow-300 border-2 border-black rounded-lg px-8 py-3 font-bold text-lg text-black shadow hover:scale-105 transition cursor-pointer" tabIndex={0} role="button" aria-label="Learn HTML" onClick={() => window.open("https://developer.mozilla.org/en-US/docs/Web/HTML", "_blank")}>HTML</div>
             <div className="bg-yellow-300 border-2 border-black rounded-lg px-8 py-3 font-bold text-lg text-black shadow hover:scale-105 transition cursor-pointer" tabIndex={0} role="button" aria-label="Learn CSS" onClick={() => window.open("https://developer.mozilla.org/en-US/docs/Web/CSS", "_blank")}>CSS</div>
             <div className="bg-yellow-300 border-2 border-black rounded-lg px-8 py-3 font-bold text-lg text-black shadow hover:scale-105 transition cursor-pointer" tabIndex={0} role="button" aria-label="Learn JavaScript" onClick={() => window.open("https://developer.mozilla.org/en-US/docs/Web/JavaScript", "_blank")}>JavaScript</div>
             <div className="bg-yellow-300 border-2 border-black rounded-lg px-8 py-3 font-bold text-lg text-black shadow hover:scale-105 transition cursor-pointer" tabIndex={0} role="button" aria-label="Learn TypeScript" onClick={() => window.open("https://www.typescriptlang.org/docs/", "_blank")}>TypeScript</div>
           </div>
-          <div className="flex flex-row justify-center gap-8 w-full mb-4 items-end">
+          <div className="flex flex-row flex-wrap justify-center gap-4 sm:gap-6 md:gap-8 w-full mb-4 items-end">
             <div className="bg-yellow-300 border-2 border-black rounded-lg px-8 py-3 font-bold text-lg text-black shadow hover:scale-105 transition cursor-pointer" tabIndex={0} role="button" aria-label="Learn React" onClick={() => window.open("https://react.dev/", "_blank")}>React</div>
             <div className="bg-yellow-300 border-2 border-black rounded-lg px-8 py-3 font-bold text-lg text-black shadow hover:scale-105 transition cursor-pointer" tabIndex={0} role="button" aria-label="Learn Next.js" onClick={() => window.open("https://nextjs.org/docs", "_blank")}>Next.js</div>
             <div className="bg-yellow-300 border-2 border-black rounded-lg px-8 py-3 font-bold text-lg text-black shadow hover:scale-105 transition cursor-pointer" tabIndex={0} role="button" aria-label="Learn Tailwind CSS" onClick={() => window.open("https://tailwindcss.com/docs/installation", "_blank")}>Tailwind CSS</div>
             <div className="bg-yellow-300 border-2 border-black rounded-lg px-8 py-3 font-bold text-lg text-black shadow hover:scale-105 transition cursor-pointer" tabIndex={0} role="button" aria-label="Learn Redux" onClick={() => window.open("https://redux.js.org/introduction/getting-started", "_blank")}>Redux</div>
           </div>
-          <div className="flex flex-row justify-center gap-8 w-full mb-4 items-end">
+          <div className="flex flex-row flex-wrap justify-center gap-4 sm:gap-6 md:gap-8 w-full mb-4 items-end">
             <div className="bg-yellow-300 border-2 border-black rounded-lg px-8 py-3 font-bold text-lg text-black shadow hover:scale-105 transition cursor-pointer" tabIndex={0} role="button" aria-label="Learn GitHub" onClick={() => window.open("https://docs.github.com/en", "_blank")}>GitHub</div>
             <div className="bg-yellow-300 border-2 border-black rounded-lg px-8 py-3 font-bold text-lg text-black shadow hover:scale-105 transition cursor-pointer" tabIndex={0} role="button" aria-label="Learn Git" onClick={() => window.open("https://git-scm.com/doc", "_blank")}>Git</div>
             <div className="bg-yellow-300 border-2 border-black rounded-lg px-8 py-3 font-bold text-lg text-black shadow hover:scale-105 transition cursor-pointer" tabIndex={0} role="button" aria-label="Learn Testing" onClick={() => window.open("https://jestjs.io/docs/getting-started", "_blank")}>Testing</div>

@@ -23,7 +23,7 @@ export default function BackendRoadmap() {
         </div>
         <section className="w-full max-w-5xl mt-12 flex flex-col items-center">
           <h2 className="text-2xl font-bold mb-6 text-black dark:text-white">Backend Roadmap</h2>
-          <div className="flex flex-row justify-center gap-8 w-full mb-4 items-end">
+          <div className="flex flex-row flex-wrap justify-center gap-4 sm:gap-6 md:gap-8 w-full mb-4 items-end">
             <a
               href="/node-roadmap"
               className="bg-yellow-300 border-2 border-black rounded-lg px-8 py-3 font-bold text-lg text-black shadow focus:outline-none focus:ring-4 focus:ring-yellow-400 hover:bg-yellow-200 transition cursor-pointer inline-flex items-center gap-2"
@@ -67,7 +67,7 @@ export default function BackendRoadmap() {
               Database
             </div>
           </div>
-          <div className="flex flex-row justify-center gap-8 w-full mb-4 items-end">
+          <div className="flex flex-row flex-wrap justify-center gap-4 sm:gap-6 md:gap-8 w-full mb-4 items-end">
             <div className="bg-yellow-300 border-2 border-black rounded-lg px-8 py-3 font-bold text-lg text-black shadow hover:scale-105 transition cursor-pointer" tabIndex={0} role="button" aria-label="Learn Authentication" onClick={() => window.open("https://auth0.com/docs/get-started", "_blank")}>Authentication</div>
             <div className="bg-yellow-300 border-2 border-black rounded-lg px-8 py-3 font-bold text-lg text-black shadow hover:scale-105 transition cursor-pointer" tabIndex={0} role="button" aria-label="Learn Deployment" onClick={() => window.open("https://vercel.com/docs", "_blank")}>Deployment</div>
             <div className="bg-yellow-300 border-2 border-black rounded-lg px-8 py-3 font-bold text-lg text-black shadow hover:scale-105 transition cursor-pointer" tabIndex={0} role="button" aria-label="Learn CI/CD" onClick={() => window.open("https://www.jenkins.io/doc/", "_blank")}>CI/CD</div>

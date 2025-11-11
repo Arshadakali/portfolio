@@ -70,7 +70,7 @@ export default function NodeRoadmap() {
             Node.js Roadmap
           </h2>
           {/* Row 1: Node.js, npm, JavaScript */}
-          <div className="flex flex-row justify-center gap-8 w-full mb-4 items-end">
+          <div className="flex flex-row flex-wrap justify-center gap-4 sm:gap-6 md:gap-8 w-full mb-4 items-end">
             <div
               className="bg-green-300 border-2 border-black rounded-lg px-8 py-3 font-bold text-lg text-black shadow hover:scale-105 transition cursor-pointer"
               tabIndex={0}
@@ -104,7 +104,7 @@ export default function NodeRoadmap() {
             </div>
           </div>
           {/* Row 2: Express, REST API, Database */}
-          <div className="flex flex-row justify-center gap-8 w-full mb-4 items-end">
+          <div className="flex flex-row flex-wrap justify-center gap-4 sm:gap-6 md:gap-8 w-full mb-4 items-end">
             <div
               className="bg-green-300 border-2 border-black rounded-lg px-8 py-3 font-bold text-lg text-black shadow hover:scale-105 transition cursor-pointer"
               tabIndex={0}
@@ -140,7 +140,7 @@ export default function NodeRoadmap() {
             </div>
           </div>
           {/* Row 3: Authentication, Deployment, CI/CD, Testing */}
-          <div className="flex flex-row justify-center gap-8 w-full mb-4 items-end">
+          <div className="flex flex-row flex-wrap justify-center gap-4 sm:gap-6 md:gap-8 w-full mb-4 items-end">
             <div
               className="bg-green-300 border-2 border-black rounded-lg px-8 py-3 font-bold text-lg text-black shadow hover:scale-105 transition cursor-pointer"
               tabIndex={0}

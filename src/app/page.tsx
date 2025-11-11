@@ -58,12 +58,27 @@ export default function Home() {
         <div className="grid gap-8 sm:grid-cols-2">
           {/* Example Project Card */}
           <div className="bg-white dark:bg-gray-800 rounded-lg shadow p-6 flex flex-col">
-            <h3 className="text-xl font-semibold mb-2">Project Title</h3>
+            <h3 className="text-xl font-semibold mb-2">
+              <Link
+                href="https://calculator-x-4a8h.vercel.app/"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="hover:underline"
+              >
+                https://calculator-x-4a8h.vercel.app/
+              </Link>
+            </h3>
             <p className="text-gray-600 dark:text-gray-300 mb-4">
-              Short project description goes here.
+              A smart, fast, and accurate calculator with step-by-step
+              solutions, matrix operations, and a handy history feature.
             </p>
-            <Link href="#" className="text-blue-600 hover:underline mt-auto">
-              View Project
+            <Link
+              href="https://calculator-x-4a8h.vercel.app/"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="text-blue-600 hover:underline mt-auto"
+            >
+              Visit CalculatorX
             </Link>
           </div>
           {/* Add more project cards as needed */}
